@@ -1,0 +1,13 @@
+{
+  "name": "daily-status-marketplace",
+  "owner": {
+    "name": "Vibhor Malik"
+  },
+  "plugins": [
+    {
+      "name": "daily-status",
+      "source": "./",
+      "description": "Markdown daily standup logs, written from plain English and stored in your Documents folder."
+    }
+  ]
+}
