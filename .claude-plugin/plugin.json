@@ -2,11 +2,24 @@
   "name": "daily-status",
   "description": "Keep a markdown daily standup log. Add, update and read Yesterday / Today / Blockers items in plain English; files land in your Documents folder.",
   "version": "1.1.0",
-  "keywords": ["standup", "dsu", "scrum", "notes", "productivity"],
+  "author": {
+    "name": "Vibhor Malik"
+  },
+  "homepage": "https://github.com/vibhormalik-dh/daily-status",
+  "repository": "https://github.com/vibhormalik-dh/daily-status",
+  "keywords": [
+    "standup",
+    "dsu",
+    "scrum",
+    "notes",
+    "productivity"
+  ],
   "mcpServers": {
     "daily-status": {
       "command": "node",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/index.js"]
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/dist/index.js"
+      ]
     }
   }
 }

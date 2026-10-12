@@ -1,4 +1,4 @@
-# daily-status-mcp
+# daily-status
 
 A local MCP server for keeping daily standup (DSU) notes as markdown files. You
 talk to Claude in plain language ("add SWP-3671 to today", "move that to
@@ -106,7 +106,7 @@ back to the default rather than erroring.
 ### As a Claude Code plugin (recommended)
 
 ```
-/plugin marketplace add vibhormalik-dh/daily-status-mcp
+/plugin marketplace add vibhormalik-dh/daily-status
 /plugin install daily-status
 ```
 
@@ -124,8 +124,8 @@ Plain English works too once the plugin is installed, with no slash command:
 ### From source
 
 ```bash
-git clone https://github.com/vibhormalik-dh/daily-status-mcp.git
-cd daily-status-mcp
+git clone https://github.com/vibhormalik-dh/daily-status.git
+cd daily-status
 npm install
 npm run build
 claude mcp add daily-status --scope user -- node "$PWD/dist/index.js"
@@ -144,7 +144,7 @@ is `%APPDATA%\Claude\claude_desktop_config.json`.
   "mcpServers": {
     "daily-status": {
       "command": "/absolute/path/to/node",
-      "args": ["/absolute/path/to/daily-status-mcp/dist/index.js"]
+      "args": ["/absolute/path/to/daily-status/dist/index.js"]
     }
   }
 }

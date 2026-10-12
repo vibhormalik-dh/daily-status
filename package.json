@@ -4,6 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Claude Code plugin and local MCP server for markdown daily standup (DSU) logs.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibhormalik-dh/daily-status.git"
+  },
+  "homepage": "https://github.com/vibhormalik-dh/daily-status#readme",
   "bin": {
     "daily-status-mcp": "./dist/index.js"
   },
